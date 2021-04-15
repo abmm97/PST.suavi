@@ -1,15 +1,15 @@
 Package: PST.suavi
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Type: Package
+Title: Suavización de Series de tiempo (Holt-winters y Brown)
+Version: 0.1.1
+Authors@R:
+    person("Anthony", "Moran", email = "20160233@lamolina.edu.pe", role = c("aut", "cre"))
+Description: El paquete contiene dos métodos de suavización de series de tiempo,
+    la suavización Holtwinters y la cuadrática de Brown, permite obtener predicciónes 
+    de las series de tiempo y encontrar el valor optimo de los parámtros requeridos.
+    Esta necesitará para Brown un conjunto de datos que contengan el t y Zt
+    Para HW se necesitará los datos que contengan las columanas de t, Zt, mes y año.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
