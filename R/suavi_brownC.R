@@ -1,4 +1,11 @@
-function(datos,alfa){
+#'@name suavi_brownC
+#'@title Brown-Quadratic Smoothing
+#'@param datos Array of data with columns t, Zt
+#'@param alfa parameter value <1, it can be a vector to test the best
+#'
+#'@return data table of the smoothed Zt and bt's smoothed and the at
+#'@export suavi_brownC
+suavi_brownC<-function(datos,alfa){
   Zt_a=matrix(datos[,2],nrow(datos),length(alfa))
   Zt_aa=matrix(datos[,2],nrow(datos),length(alfa))
   Zt_aaa=matrix(datos[,2],nrow(datos),length(alfa))
